@@ -20,18 +20,17 @@ spec:
         env:
         - name: PROCESSINGSCRIPT
           value: twitter-to-pubsub
-        # Change this to your pubsub topic
-        - name: PUBSUB_TOPIC
+        # This is the name of pubsub topic
+        - name: data-inside
           value: projects/your-project/topics/your-topic
-        # Change the following four settings to your twitter credentials
-        # information.
+        # The following four settings are the twitter credentials information.
         - name: CONSUMERKEY
-          value: xxxx
+          value: eDD86PgwAgxbILliCTpShddAw
         - name: CONSUMERSECRET
-          value: xxxx
+          value: h2QmnqJzpdAnflxkEM0ugWbXmOGXacNvmfuzsLndkBwHuXGAi9
         - name: ACCESSTOKEN
-          value: xxxx
+          value: 836261139352813569-UhjRlrZmylxrFF5X2uzL0GLIAi1yVxI
         - name: ACCESSTOKENSEC
-          value: xxxx
+          value: 4eGLrLI6SAnePUjRJsmk11Vempp6G01pOWVG8Y7PHdnir
         - name: TWSTREAMMODE
           value: sample
