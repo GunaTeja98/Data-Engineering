@@ -20,14 +20,14 @@ spec:
         env:
         - name: PROCESSINGSCRIPT
           value: pubsub-to-bigquery
-        # Change this to your pubsub topic
-        - name: PUBSUB_TOPIC
+        # This the name of pubsub topic
+        - name: data-inside
           value: projects/your-project/topics/your-topic
-        # Change this to your project ID.
+        # This is the project ID.
         - name: PROJECT_ID
-          value: xxxx
-        # Change the following two settings to your dataset and table.
+          value: data-pro-337902
+        # The two settings to the dataset and table.
         - name: BQ_DATASET
-          value: xxxx
+          value: dsets
         - name: BQ_TABLE
-          value: xxxx
+          value: tweets
