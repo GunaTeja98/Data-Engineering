@@ -225,8 +225,8 @@ Edit `bigquery-controller.yaml`.  Set your `PUBSUB_TOPIC`, and set your `PROJECT
 After starting up your GKE cluster, and configuring your `.yaml` files, create the Deployments from the `pubsub` directory:
 
 ```sh
-kubectl.sh create -f bigquery-controller.yaml
-kubectl.sh create -f twitter-stream.yaml
+kubectl apply -f bigquery-controller.yaml
+kubectl apply -f twitter-stream.yaml
 ```
 
 To see your running pods, run:
