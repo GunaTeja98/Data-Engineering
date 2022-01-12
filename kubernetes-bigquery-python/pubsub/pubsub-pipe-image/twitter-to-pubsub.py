@@ -57,7 +57,7 @@ class StdOutListener(StreamListener):
     count = 0
     twstring = ''
     tweets = []
-    batch_size = 50
+    batch_size = 10
     total_tweets = 10000000
     client = utils.create_pubsub_client(utils.get_credentials())
 
@@ -102,11 +102,5 @@ if __name__ == '__main__':
         stream.sample()
     else:
         stream.filter(
-                track=['bigdata', 'kubernetes', 'bigquery', 'docker', 'google',
-                       'googlecloud', 'golang', 'dataflow',
-                       'containers', 'appengine', 'gcp', 'compute',
-                       'scalability', 'gigaom', 'news', 'tech', 'apple',
-                       'amazon', 'cluster', 'distributed', 'computing',
-                       'cloud', 'android', 'mobile', 'ios', 'iphone',
-                       'python', 'recode', 'techcrunch', 'timoreilly']
+                track=['covid']
                 )
